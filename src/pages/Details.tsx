@@ -218,7 +218,9 @@ export default function Details() {
               <iframe
                 className="h-full w-full border-0"
                 frameBorder={0}
-                src={`https://www.google.com/maps/embed/v1/place?q=${office.name},&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8`}
+                src={`https://www.google.com/maps/embed/v1/place?q=${office.name},&key=${
+                  import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+                }`}
               />
             </div>
             <a
